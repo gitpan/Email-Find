@@ -2,7 +2,7 @@ package Email::Find;
 
 use strict;
 use vars qw($VERSION @EXPORT);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 # Need qr//.
 require 5.005;
@@ -208,22 +208,16 @@ addresses and parse just fine as them.  The biggest headache is email
 and usenet message IDs.  I do my best to avoid them, but there's only
 so much cleverness you can pack into one library.
 
-=item This module requires 5.005_63 or higher!
-
-This module runs so slow as to be unusable with 5.005 stable.  I'm not
-sure, but it might be because I build up my search regex using lots of
-compiled regexes.  Either way, it runs orders of magnitude faster
-under 5.005_63.
-
-Perhaps in later versions I'll be able to tweak it to be efficient
-with 5.005 stable.
-
 =back
 
 =head1 AUTHOR
 
-Copyright 2000, Michael G Schwern <schwern@pobox.com>.
+Copyright 2000, 2001 Michael G Schwern <schwern@pobox.com>.
 All rights reserved.
+
+=head1 THANKS
+
+Thanks to Jeremy Howard for his patch to make it work under 5.005.
 
 =head1 LICENSE
 
@@ -235,11 +229,10 @@ the author.
 For everyone else this module is free software; you may redistribute
 it and/or modify it under the same terms as Perl itself.
 
-
-
+If you're not sure, contact the author.
 
 =head1 SEE ALSO
 
-  L<Email::Valid>, RFC 822, L<URI::Find>
+L<Email::Valid>, RFC 822, L<URI::Find>, L<Apache::AntiSpam>
 
 =cut
