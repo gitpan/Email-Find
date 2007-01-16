@@ -1,4 +1,4 @@
-# $Id: addr-spec.t,v 1.1 2002/01/13 12:52:05 miyagawa Exp $
+# $Id: /mirror/monster/Email-Find/trunk/t/addr-spec.t 702 2002-01-13T12:52:05.000000Z miyagawa  $
 use strict;
 use Test::More tests => 2;
 

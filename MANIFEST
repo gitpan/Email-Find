@@ -9,3 +9,4 @@ t/RFC822.t
 t/addr-spec.t
 t/new-api.t
 t/rfc822.txt
+META.yml                                 Module meta-data (added by MakeMaker)
